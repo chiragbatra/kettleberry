@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8;
 }
 
 * {
@@ -27,9 +27,37 @@ code {
 }
 
 .container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.mockup{
+  max-height: 527px;
+}
+
+p{
+  max-width: 50vw;
+}
+
+@media only screen and (max-width: 600px) {
+  p{
+    padding: 10px;
+    max-width: 100vw;
+  }
+  .mockup{
+    max-height: 250px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    p {
+      padding: 10px;
+      max-width: 80vw;
+    }
+
+    .mockup {
+      max-height: 350px;
+    }
 }
